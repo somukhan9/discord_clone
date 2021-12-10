@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-of%g9e6yvji+55%p907uvu84oamn%#7zb%k21-fw$j=h++_p*v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['samdiscord.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
