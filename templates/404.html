@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<div class="container-404">
+  {% if request.user.is_authenticated %}
+  <div class="create-room-btn">
+    <a href="{% url 'create-room' %}">Create Room</a>
+  </div>
+  {% endif %}
+  <h1>{{error}}</h1>
+</div>
+{% endblock content %}

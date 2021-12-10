@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>DisCord</title>
+  </head>
+
+  <body>
+    {% include './_navbar.html' %}
+    <div class="flash-container">{% include './_flash.html' %}</div>
+    {% block content %} {% endblock content %}
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
